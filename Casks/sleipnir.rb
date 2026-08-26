@@ -15,8 +15,8 @@ cask "sleipnir" do
   caveats <<~EOS
     sleipnir is not signed with an Apple Developer ID or notarized yet.
     If macOS blocks the first launch, right-click the app and choose
-    Open, or install with:
-      brew install --cask --no-quarantine mpurdon/tap/sleipnir
+    Open, or clear quarantine with:
+      xattr -dr com.apple.quarantine /Applications/sleipnir.app
 
     After first launch, re-ENGAGE your services once so your AWS
     profiles' credential_process points at the installed app.
