@@ -4,7 +4,7 @@ Homebrew tap for [sleipnir](https://github.com/mpurdon/sleipnir) — a
 Norse-themed AWS SSO credential manager.
 
 ```sh
-brew install --cask mpurdon/tap/sleipnir
+brew install --cask mpurdon/tap/sleipnir-aws
 ```
 
 sleipnir isn't notarized yet; if Gatekeeper objects on first launch,

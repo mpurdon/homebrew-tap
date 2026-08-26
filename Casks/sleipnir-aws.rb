@@ -1,4 +1,4 @@
-cask "sleipnir" do
+cask "sleipnir-aws" do
   version "0.1.1"
   sha256 "bd3aada0b16e518b5f6a7c24806d80acf04a6aca8dcc8035bc939934570b4289"
 
