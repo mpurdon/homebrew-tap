@@ -1,6 +1,6 @@
 cask "sleipnir" do
-  version "0.1.0"
-  sha256 "f585a5fa0a97eb50591e528226da8f165804777067d0419bca1afb539218869f"
+  version "0.1.1"
+  sha256 "bd3aada0b16e518b5f6a7c24806d80acf04a6aca8dcc8035bc939934570b4289"
 
   url "https://github.com/mpurdon/sleipnir/releases/download/v#{version}/sleipnir_#{version}_aarch64.app.tar.gz"
   name "Sleipnir"
