@@ -8,7 +8,7 @@ cask "pontifex" do
   homepage "https://github.com/mpurdon/pontifex"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "pontifex.app"
 
