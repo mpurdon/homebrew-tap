@@ -4,7 +4,7 @@ Homebrew tap for:
 
 - [sleipnir](https://github.com/mpurdon/sleipnir) — a Norse-themed AWS SSO
   credential manager.
-- [pontifex](https://github.com/mpurdon/pontifex) — bridge-keeper for an
+- [Pontifex](https://github.com/mpurdon/pontifex) — bridge-keeper for an
   EventBridge event bus: browse, edit, validate and register schemas.
 
 ```sh
