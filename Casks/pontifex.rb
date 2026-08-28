@@ -1,6 +1,6 @@
 cask "pontifex" do
-  version "0.1.1"
-  sha256 "892c8518105468a6e823a9d5af42c389cea16d7f13c3075cc3151ad87babadca"
+  version "0.1.2"
+  sha256 "4924f13fd2d1fb87562a6fed261e205a1d018ceefdb310c2e217be4596ecdfbb"
 
   url "https://github.com/mpurdon/pontifex/releases/download/v#{version}/pontifex_#{version}_aarch64.app.tar.gz"
   name "Pontifex"
