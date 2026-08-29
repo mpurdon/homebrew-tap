@@ -1,6 +1,6 @@
 cask "sleipnir-aws" do
-  version "0.1.1"
-  sha256 "bd3aada0b16e518b5f6a7c24806d80acf04a6aca8dcc8035bc939934570b4289"
+  version "0.1.3"
+  sha256 "7b24fafe960d9319ebcc8540b5077e81b228ff57f90c20b17d55aeb4447ad677"
 
   url "https://github.com/mpurdon/sleipnir/releases/download/v#{version}/sleipnir_#{version}_aarch64.app.tar.gz"
   name "Sleipnir"
@@ -13,13 +13,8 @@ cask "sleipnir-aws" do
   app "sleipnir.app"
 
   caveats <<~EOS
-    sleipnir is not signed with an Apple Developer ID or notarized yet.
-    If macOS blocks the first launch, right-click the app and choose
-    Open, or clear quarantine with:
-      xattr -dr com.apple.quarantine /Applications/sleipnir.app
-
-    After first launch, re-ENGAGE your services once so your AWS
-    profiles' credential_process points at the installed app.
+    Signed and notarized — no Gatekeeper workarounds needed.
+    Open sleipnir, log in to your org, and engage away.
   EOS
 
   zap trash: [
