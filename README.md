@@ -12,5 +12,4 @@ brew install --cask mpurdon/tap/sleipnir-aws
 brew install --cask mpurdon/tap/pontifex
 ```
 
-sleipnir isn't notarized yet; if Gatekeeper objects on first launch,
-right-click → Open, or run `xattr -dr com.apple.quarantine /Applications/sleipnir.app`.
+Signed and notarized — installs clean, no Gatekeeper workarounds.
