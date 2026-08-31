@@ -8,17 +8,17 @@ cask "sleipnir-aws" do
   homepage "https://github.com/mpurdon/sleipnir"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "sleipnir.app"
-
-  caveats <<~EOS
-    Signed and notarized — no Gatekeeper workarounds needed.
-    Open sleipnir, log in to your org, and engage away.
-  EOS
 
   zap trash: [
     "~/.sleipnir",
     "~/Library/Logs/dev.purdonmoi.sleipnir",
   ]
+
+  caveats <<~EOS
+    Signed and notarized — no Gatekeeper workarounds needed.
+    Open sleipnir, log in to your org, and engage away.
+  EOS
 end
