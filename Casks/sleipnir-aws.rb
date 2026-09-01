@@ -11,6 +11,11 @@ cask "sleipnir-aws" do
   depends_on macos: :monterey
 
   app "sleipnir.app"
+  # Puts `sleipnir` on PATH: launches the GUI, and carries the
+  # `sleipnir creds --profile <name>` credential helper. Note this runs the
+  # app in the foreground, attached to the terminal — use `open -a sleipnir`
+  # (or append &) when you want it detached.
+  binary "#{appdir}/sleipnir.app/Contents/MacOS/sleipnir"
 
   zap trash: [
     "~/.sleipnir",
@@ -20,5 +25,8 @@ cask "sleipnir-aws" do
   caveats <<~EOS
     Signed and notarized — no Gatekeeper workarounds needed.
     Open sleipnir, log in to your org, and engage away.
+
+    `sleipnir` is now on your PATH. It runs in the foreground; use
+    `open -a sleipnir` to launch it detached from the terminal.
   EOS
 end
