@@ -1,6 +1,6 @@
 cask "sleipnir-aws" do
-  version "0.1.4"
-  sha256 "a890d54f5167ab4a3dfa98aca2f08aff46f9831757395aa37cc752cf123540f5"
+  version "0.1.5"
+  sha256 "135257d23fdde9746c8d88f7f0367b8b922bf572ea1e65ba483253b1eb5d22b4"
 
   url "https://github.com/mpurdon/sleipnir/releases/download/v#{version}/sleipnir_#{version}_aarch64.app.tar.gz"
   name "Sleipnir"
