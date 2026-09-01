@@ -12,9 +12,8 @@ cask "sleipnir-aws" do
 
   app "sleipnir.app"
   # Puts `sleipnir` on PATH: launches the GUI, and carries the
-  # `sleipnir creds --profile <name>` credential helper. Note this runs the
-  # app in the foreground, attached to the terminal — use `open -a sleipnir`
-  # (or append &) when you want it detached.
+  # `sleipnir creds --profile <name>` credential helper. A bare invocation
+  # detaches itself (see src-tauri/src/launch.rs); `--foreground` opts out.
   binary "#{appdir}/sleipnir.app/Contents/MacOS/sleipnir"
 
   zap trash: [
@@ -26,7 +25,7 @@ cask "sleipnir-aws" do
     Signed and notarized — no Gatekeeper workarounds needed.
     Open sleipnir, log in to your org, and engage away.
 
-    `sleipnir` is now on your PATH. It runs in the foreground; use
-    `open -a sleipnir` to launch it detached from the terminal.
+    `sleipnir` is now on your PATH and detaches from the terminal on its
+    own. Use `sleipnir --foreground` when you want the log on stdout.
   EOS
 end
